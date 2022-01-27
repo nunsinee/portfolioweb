@@ -1,12 +1,12 @@
 import React from "react"
-import AboutmeImg from "../../assets/nunsinee-viken-about.jpg"
+import Aboutme from "../../assets/nunsinee-viken-about.jpg"
 
 function AboutSkills() {
 	return (
 		<div className="col-lg-6 col-sm-12">
 			<div className="box-about">
 				<img
-					src={AboutmeImg}
+					src={Aboutme}
 					alt="nunsinee viken photo"
 					className="img-fluid img-thumbnail"
 				/>
