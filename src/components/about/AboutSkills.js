@@ -6,8 +6,9 @@ function AboutSkills() {
 		<div className="col-lg-6 col-sm-12">
 			<div className="box-about">
 				<img
+					type="image"
 					src={Aboutme}
-					alt="nunsinee viken photo"
+					alt="nunsinee viken"
 					className="img-fluid img-thumbnail"
 				/>
 
