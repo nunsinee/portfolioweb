@@ -1,0 +1,164 @@
+@use "../partials/mixins" as *;
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	@include gradient;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	color: $copy;
+}
+
+.wrapper {
+	@include gradient;
+	flex: 1 0 auto;
+}
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	@media (max-width: $tablet) {
+		max-width: 100%;
+	}
+
+	&.nav-container {
+		@media (max-width: $tablet) {
+			width: 100%;
+			margin: 0 auto;
+			& div {
+				margin-bottom: 0em;
+			}
+		}
+
+		@media (min-width: $tablet) {
+			width: 80%;
+			margin: 0 auto;
+			& div {
+				margin-bottom: 0em;
+			}
+		}
+	}
+
+	&.content {
+		background-color: $secondary;
+		margin: 0 auto;
+		border-radius: $borderRadius;
+
+		@media (max-width: $mobile) {
+			padding: 2em 1em;
+			border-radius: 0;
+			margin: 0;
+			border-radius: 0;
+		}
+
+		@media (min-width: $desktop) {
+			padding: 5em;
+			.col-content {
+				padding-right: 2em;
+			}
+		}
+	}
+	&.foot {
+		background-color: $secondary;
+
+		@media (max-width: $desktop) {
+			padding-left: 1em;
+			padding-right: 1em;
+			padding-top: 1em;
+			border-radius: 0;
+			margin: 0;
+			border-radius: 0;
+			padding-bottom: 1em;
+		}
+
+		@media (min-width: $tablet) {
+			border-bottom-left-radius: $borderRadius;
+			border-bottom-right-radius: $borderRadius;
+			padding-bottom: 2em;
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	text-align: center;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	margin-top: -2em;
+
+	@media (min-width: $tablet) {
+		max-width: 100%;
+		margin-bottom: 5em;
+		margin-top: -2em;
+	}
+}
+
+form {
+	margin-bottom: 2em;
+}
+
+.icons-container {
+	display: flex;
+	width: auto;
+	margin: 1em 0;
+	justify-content: center;
+}
+
+.icon-category {
+	width: 30px;
+	height: 30px;
+	margin: 0.25em;
+	border-radius: $borderCircleRadius;
+	box-shadow: 1px 1px 1px 1px rgba($secondary, 0.6);
+
+	&:hover {
+		background-color: getColour(icon);
+	}
+}
+
+.icon-web-category {
+	width: 24px;
+	height: 24px;
+	border-radius: $borderCircleRadius;
+	background-color: getColour(icon);
+	margin: 1em auto;
+
+	&:hover {
+		background-color: getColour(icon);
+	}
+}
+
+.icon-github {
+	background: url(/assets/icons/github-icons.svg) no-repeat;
+	background-color: $white;
+}
+
+.icon-linkedin {
+	background: url(/assets/icons/linkedin-icons.svg) no-repeat;
+	background-color: $white;
+}
+
+.icon-twitter {
+	background: url(/assets/icons/twitter-icons.svg) no-repeat;
+	background-color: $white;
+}
+
+.icon-facebook {
+	background: url(/assets/icons/facebook-icons.svg) no-repeat;
+	background-color: $white;
+}
+
+.icon-github-link {
+	background: url(/assets/icons/github-icons-link.svg) no-repeat;
+	border: 1px solid $black;
+}
