@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container"
 
 function Footer() {
 	return (
-		<div class="footer">
+		<div className="footer">
 			<Container className="foot">
 				<div className="col-lg-12">
 					<div className="icons-container">

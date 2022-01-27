@@ -3,7 +3,7 @@ import Heading from "../typography/Heading"
 
 function AboutDetail() {
 	return (
-		<div class="col-lg-6 col-sm-12 col-content">
+		<div className="col-lg-6 col-sm-12 col-content">
 			<Heading content="About" />
 			<p>
 				Hi, I am <b>Nunsinee Viken</b> and I currently studying
