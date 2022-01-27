@@ -4,7 +4,7 @@ function HomeDetail() {
 	return (
 		<div className="col-lg-6 col-sm-12">
 			<h1 className="display-5">
-				<span className="spaceLetter">Beleive</span>
+				<span className="spaceLetter">Believe</span>
 				<span className="spaceLetter">in</span>
 				<span className="spaceLetter">what</span>
 				<span className="spaceLetter">you</span>
@@ -13,7 +13,7 @@ function HomeDetail() {
 				<span className="spaceLetter">Do</span>
 				<span className="spaceLetter"> What</span>
 				<span className="spaceLetter">you</span>
-				<span className="spaceLetter">Beleive!</span>
+				<span className="spaceLetter">Believe!</span>
 			</h1>
 			<p>
 				Hi, I am <b>Nunsinee Viken</b> and I currently studying
